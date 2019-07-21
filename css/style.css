@@ -1,0 +1,1103 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsansbold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #f2f2f2;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+    background-color: #fff;
+
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+}
+
+.wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button_blue, .button_brown {
+    display: block;
+    
+    border: none;
+
+    font-weight: bold;
+    color: #fff;
+
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button_blue {
+    background-color: #81b3d2;
+
+    cursor: pointer;
+}
+
+.button_blue:hover, .button_blue:focus {
+    background-color: #669ec0;
+}
+
+.button_blue:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+}
+
+.button_brown {
+    background-color: #766357;
+
+    cursor: pointer;
+}
+
+.button_brown:hover, .button_brown:focus {
+    background-color: #604e43;
+}
+
+.button_brown:active {
+    background-color: #503e33;
+    color: #928a85;
+}
+
+/*--- Header ---*/
+
+.main-navigation {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 70px;
+}
+
+.main-navigation__item {
+    display: block;
+
+    width: 130px;
+    padding: 15px 0;
+    margin: 0;
+
+    font-weight: bold;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main-navigation__item:nth-child(4), .main-navigation__item:nth-child(5) {
+    text-align: right;
+}
+
+.main-navigation__item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-navigation__item a:hover, .main-navigation__item a:focus {
+    color: #81b3d2;
+}
+
+.main-navigation__item a:active {
+    opacity: .3;
+}
+
+.navigation-link_current {
+    color: #766357;
+}
+
+.main-navigation__logo img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+
+/*--- Sedona ---*/
+
+.sedona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 510px;
+
+    background-color: #889eb0;
+    background-image: url("../img/shape.png"), url(../img/background-photo.jpg);
+    background-position: 0 453px, 0 -60px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.sedona__welcome {
+    margin-top: 76px;
+}
+
+.sedona__to-the-georgia {
+    margin-top: 11px;
+}
+
+.sedona__sedona {
+    margin-top: 62px;
+}
+
+.sedona__grand-canyon {
+    margin-top: 58px;
+}
+
+/*--- Reasons ---*/
+
+.reasons {
+    position: relative;
+
+    z-index: 3;
+}
+
+.reasons h2 {
+    display: block;
+
+    width: 450px;
+    margin: 55px auto 0;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.reasons > p {
+    display: block;
+
+    margin: 30px 0 45px;
+
+    text-align: center;
+}
+
+.reasons ol, .reasons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.reasons__item_big {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 256px;
+
+    background-color: #81b3d2;
+    color: #fff;
+}
+
+.reasons__item_first {
+    background-image: url(../img/Layer-10.jpg);
+    background-position: 400px center;
+    background-repeat: no-repeat;
+}
+
+.reasons__item_second {
+    background-image: url(../img/Layer-5.jpg);
+    background-position: 00px center;
+    background-repeat: no-repeat;
+}
+
+.reasons__item_big .reasons__item_small {
+    background-color: #81b3d2;
+}
+
+.reasons__item_small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    padding: 45px 0;
+}
+
+.reasons__item_small h3 {
+    display: block;
+
+    width: 130px;
+    margin: 0;
+
+    text-align: center;
+}
+
+.reasons-item__number {
+    margin-top: 20px;
+}
+
+.reasons-item__number::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.reasons-item__number::after {
+    content: "-";
+    margin-left: 5px;
+}
+
+.reasons__item_small p {
+    display: block;
+
+    width: 290px;
+    padding: 0;
+    margin: 20px 0 0;
+
+    text-align: center;
+}
+
+.reasons__item_reverse {
+    flex-direction: row-reverse;
+}
+
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.advantages__item h3 {
+    margin-top: 30px;
+}
+
+.advantages__item p {
+    display: block;
+
+    width: 295px;
+    margin: 20px 0 0;
+
+    text-align: center;
+}
+
+
+.reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons__list > .reasons__item_small {
+    background-color: #eeeeee;
+}
+
+/*--- Hotel ---*/
+
+.hotel {
+    position: relative;
+}
+
+.hotel__wrapper {
+    position: relative;
+
+    padding-top: 50px;
+
+    background-color: #fff;
+
+    z-index: 3;
+}
+
+.hotel h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.hotel p {
+    display: block;
+
+    width: 450px;
+    margin: 30px auto 0;
+
+    text-align: center;
+}
+
+.hotel__button {
+    width: 570px;
+
+    padding: 30px 0;
+    margin: 50px auto 0;
+
+    font-size: 21px;
+}
+
+
+.hotel__popup {
+    position: absolute;
+    bottom: -398px;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: none;
+
+    width: 570px;
+    padding: 55px 50px;
+
+    background-color: #fff;
+
+    font-weight: bold;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    z-index: 2;
+}
+
+.hotel__form > label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.hotel-form__date, .hotel-form__visitors {
+    background-color: #f2f2f2;
+    color: #000;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+
+    border: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hotel-form__date:hover, .hotel-form__visitors:hover {
+    background-color: #ebebeb;
+}
+
+.hotel-form__date:focus, .hotel-form__visitors:focus {
+    background-color: #fff;
+
+    box-shadow: 0 0 2px 0  #e5e5e5;
+
+    outline: none;
+}
+
+.hotel-form__date {
+    width: 345px;
+    padding: 6px 35px 6px 10px;
+}
+
+.calendar {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+
+    width: 21px;
+    height: 22px;
+
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='22px' viewBox='0 0 21 22' enable-background='new 0 0 21 22' xml:space='preserve'%3E%3Cg id='calendar_1_'%3E%3Cpath fill='%23cacaca' d='M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648 c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689 c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501 C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75 c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689 c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938 v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z'/%3E%3Crect fill='%23cacaca' x='4.594' y='8.225' width='2.625' height='2.066'/%3E%3Crect fill='%23cacaca' x='4.594' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%23cacaca' x='4.594' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%23cacaca' x='9.188' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%23cacaca' x='9.188' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%23cacaca' x='9.188' y='8.225' width='2.625' height='2.066'/%3E%3Crect fill='%23cacaca' x='13.781' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%23cacaca' x='13.781' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%23cacaca' x='13.781' y='8.225' width='2.625' height='2.066'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.calendar:hover, .calendar:focus {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='22px' viewBox='0 0 21 22' enable-background='new 0 0 21 22' xml:space='preserve'%3E%3Cg id='calendar_1_'%3E%3Cpath d='M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648 c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689 c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501 C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75 c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689 c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938 v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z'/%3E%3Crect x='4.594' y='8.225' width='2.625' height='2.066'/%3E%3Crect x='4.594' y='11.668' width='2.625' height='2.067'/%3E%3Crect x='4.594' y='15.112' width='2.625' height='2.066'/%3E%3Crect x='9.188' y='15.112' width='2.625' height='2.066'/%3E%3Crect x='9.188' y='11.668' width='2.625' height='2.067'/%3E%3Crect x='9.188' y='8.225' width='2.625' height='2.066'/%3E%3Crect x='13.781' y='15.112' width='2.625' height='2.066'/%3E%3Crect x='13.781' y='11.668' width='2.625' height='2.067'/%3E%3Crect x='13.781' y='8.225' width='2.625' height='2.066'/%3E%3C/g%3E%3C/svg%3E%0A");
+    outline: none;
+}
+
+.calendar:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='21px' height='22px' viewBox='0 0 21 22' enable-background='new 0 0 21 22' xml:space='preserve'%3E%3Cg id='calendar_1_'%3E%3Cpath fill='%2381b3d2' d='M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648 c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689 c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501 C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75 c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689 c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938 v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z'/%3E%3Crect fill='%2381b3d2' x='4.594' y='8.225' width='2.625' height='2.066'/%3E%3Crect fill='%2381b3d2' x='4.594' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%2381b3d2' x='4.594' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%2381b3d2' x='9.188' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%2381b3d2' x='9.188' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%2381b3d2' x='9.188' y='8.225' width='2.625' height='2.066'/%3E%3Crect fill='%2381b3d2' x='13.781' y='15.112' width='2.625' height='2.066'/%3E%3Crect fill='%2381b3d2' x='13.781' y='11.668' width='2.625' height='2.067'/%3E%3Crect fill='%2381b3d2' x='13.781' y='8.225' width='2.625' height='2.066'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+
+.hotel-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-form__wrapper > label {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 55px;
+}
+
+.hotel-form__visitors {
+    width: 38px;
+    height: 38px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    text-align: center;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-wrapper_adults {
+    margin-left: 51px;
+}
+
+.buttons-wrapper_kids {
+    margin-left: 27px;
+}
+
+.decr-button, .incr-button {
+    position: relative;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: #f2f2f2;
+    
+    border: none;
+}
+
+.decr-button:before, .incr-button:before {
+    content: '';
+
+    position: absolute;
+    left: 13px;
+    top: 18px;
+
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+}
+
+.incr-button:after {
+    content: '';
+
+    position: absolute;
+    left: 13px;
+    top: 18px;
+
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+    transform: rotate(90deg);
+}
+
+.incr-button:hover::before, .incr-button:focus::before, .incr-button:hover::after, .incr-button:focus::after,
+.decr-button:hover::before, .decr-button:focus::before {
+    background-color: #000;
+}
+
+.incr-button:active::before, .incr-button:active::after, .decr-button:active::before {
+    background-color: #81b3d2;
+}
+
+
+.hotel-form__button {
+    width: 100%;
+    padding: 17px 0;
+
+    font-size: 21px;
+    line-height: 26px;
+}
+
+
+.modal-show {
+    display: block;
+
+    animation-name: show;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes show {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: -398px;
+    }
+}
+
+/*--- Map ---*/
+
+.map {
+    position: relative;
+
+    width: 100%;
+    height: 475px;
+
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*--- Footer ---*/
+
+.main-footer {
+    background-image: url(../img/map.png);
+    background-position: center -610px;
+    background-repeat: no-repeat;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 35px 100px 35px 130px;
+
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.main-footer__visitsedona {
+    width: 180px;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.social-sites {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+}
+
+.social-sites__item {
+    display: block;
+
+    width: 46px;
+    height: 46px;
+
+    background-color: #81b3d2;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-sites__item:hover, .social-sites__item:focus {
+    background-color: #669ec0;
+}
+
+.social-sites li:nth-child(1) .social-sites__item:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='17px' height='15px' viewBox='0 0 17 15' enable-background='new 0 0 17 15' xml:space='preserve'%3E%3Cimage overflow='visible' width='17' height='15' xlink:href='t.png' %3E%3C/image%3E%3Cg id='W6EeEF_1_'%3E%3Cg%3E%3Cpath fill='%2388b6d1' d='M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708 c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024 c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887 c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103 C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952 c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.social-sites li:nth-child(2) .social-sites__item:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='12px' height='22px' viewBox='0 0 12 22' enable-background='new 0 0 12 22' xml:space='preserve'%3E%3Cpath fill='%2388b6d1' d='M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z'/%3E%3C/svg%3E%0A");
+}
+
+.social-sites li:nth-child(3) .social-sites__item:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='16px' viewBox='0 0 20 16' enable-background='new 0 0 20 16' xml:space='preserve'%3E%3Cimage overflow='visible' enable-background='new ' width='20' height='16' xlink:href='youtube.png' %3E%3C/image%3E%3Cpath fill='%2388b6d1' d='M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z M6.027,11.998V4.002L15.014,8L6.027,11.998z'/%3E%3C/svg%3E%0A");
+}
+
+.social-sites li:nth-child(1) .social-sites__item {
+    background-image: url(../img/t.svg);
+}
+
+.social-sites li:nth-child(2) .social-sites__item {
+    background-image: url(../img/fb-icon.svg);
+}
+
+.social-sites li:nth-child(3) .social-sites__item {
+    background-image: url(../img/youtube.svg);
+}
+
+.main-footer__designed {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+}
+
+.main-footer__designed a {
+    margin-left: 8px;
+}
+
+.main-footer__designed a:hover svg path, .main-footer__designed a:hover svg rect,
+.main-footer__designed a:focus svg path, .main-footer__designed a:focus svg rect {
+    fill: #81b3d2;
+}
+
+.main-footer__designed a:active svg path, .main-footer__designed a:active svg rect {
+    fill: #bdbbbc;
+}
+
+
+/*--- Inner Page ---*/
+
+
+.main-navigation .current-navigation {
+    color: #766357;
+
+    user-select: none;
+}
+
+.main-navigation .current-navigation:hover {
+    color: #766357;
+}
+
+.main-navigation .current-navigation:active {
+    color: #766357;
+
+    opacity: 1;
+}
+
+.logo-link:focus img{
+    outline-offset: -2px;
+    outline: #4D90FE auto 5px;
+}
+
+.filter {
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    line-height: 21px;
+    color: #fff;
+
+    background-image: url(../img/hotels-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.filter form {
+    display: flex;
+}
+
+.hotel-selection, .price-selection {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    
+    border: none;
+}
+
+.hotel-selection {
+    width: 240px;
+}
+
+.price-selection {
+    width: 330px;
+    margin-left: auto;
+}
+
+.hotel-selection legend, .price-selection legend{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.hotel-selection label {
+    position: relative;
+    
+    padding-left: 40px;
+    margin-top: 25px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 27px;
+    height: 23px;
+
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+}
+
+.checkbox-indicator:focus + .checkbox {
+    outline-offset: -2px;
+    outline: #4D90FE auto 5px;
+}
+
+.checkbox-indicator:checked + .checkbox {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.checkbox-indicator:disabled + .checkbox {
+    background-image: url(../img/checkbox-off-d.svg);
+}
+
+.checkbox-indicator:checked:disabled + .checkbox {
+    background-image: url(../img/checkbox-on-d.svg);
+}
+
+.checkbox:not(:disabled) {
+    cursor: pointer;
+}
+
+.scope-price {
+    position: relative;
+
+    display: flex;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.scope-price__left, .scope-price__right {
+    width: 50%;
+    text-align: center;
+}
+
+.scope-price::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 5px;
+
+    height: 22px;
+    width: 2px;
+
+    background-color: #fff;
+}
+
+.toddler {
+    position: relative;
+
+    height: 23px;
+    margin-top: 10px;
+
+    background-image: linear-gradient(to bottom, transparent 9px, rgba(255, 255, 255, .3) 9px, rgba(255, 255, 255, .3) 11px, transparent 11px);
+}
+
+.toddler__left, .toddler__right {
+    position: absolute;
+
+    width: 20px;
+    height: 23px;
+
+    background-color: transparent;
+    background-image: url(../img/filter-button.svg);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.toddler__right {
+    right: 45px;
+}
+
+.filter__button {
+    padding: 5px 35px;
+    margin: 20px auto 0;
+
+    color: #fff;
+    background-color: transparent;
+
+    border: 2px solid #fff;
+    border-radius: 2px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.filter__button:hover, .filter__button:focus {
+    color: #000;
+    background-color: #fff;
+}
+
+/*--- Sorting ---*/
+
+.hotels-sort {
+    display: flex;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.hotels-sort__result {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.sorting {
+    margin: 0 0 0 50px;
+
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sorting-selector {
+    margin-left: 30px;
+
+    color: #cacaca;
+    text-decoration: none;
+
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-selector:hover, .sorting-selector:focus {
+    color: #81b3d2;
+}
+
+.sorting-selector:active {
+    color: #000;
+
+    border-bottom: none;
+}
+
+.sorting-selector:first-child {
+    margin-left: 40px;
+}
+
+.current-selector {
+    color: #81b3d2;
+
+    border-bottom: none;
+}
+
+.up-dir, .down-dir {
+    width: 11px;
+    height: 10px;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+.up-dir {
+    margin-left: auto;
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolygon fill='%23cacaca' points='5.5,0 0,10 11,10 '/%3E%3C/svg%3E%0A");
+
+    cursor: pointer;
+}
+
+.down-dir {
+    margin-left: 10px;
+
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolyline fill='%23cacaca' points='5.5,10 0,0 11,0 '/%3E%3C/svg%3E%0A");
+
+    cursor: pointer;
+}
+
+.up-dir:hover, .up-dir:focus {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='5.5,0 0,10 11,10 '/%3E%3C/svg%3E%0A");
+}
+
+.down-dir:hover, .down-dir:focus {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolyline fill='%23231f20' points='5.5,10 0,0 11,0 '/%3E%3C/svg%3E%0A");
+}
+
+.up-dir:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolygon fill='%2381b3d2' points='5.5,0 0,10 11,10 '/%3E%3C/svg%3E%0A");
+}
+
+.down-dir:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolyline fill='%2381b3d2' points='5.5,10 0,0 11,0 '/%3E%3C/svg%3E%0A");
+}
+
+.current-up-dir {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolygon fill='%2381b3d2' points='5.5,0 0,10 11,10 '/%3E%3C/svg%3E%0A");
+}
+
+.current-down-dir {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='11px' height='10px' viewBox='0 0 11 10' enable-background='new 0 0 11 10' xml:space='preserve'%3E%3Cpolyline fill='%2381b3d2' points='5.5,10 0,0 11,0 '/%3E%3C/svg%3E%0A");
+}
+
+/*--- Hotels List ---*/
+
+.hotels__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.hotel-info {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.hotels-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-left: 30px;
+}
+
+.hotel-info img {
+    width: 135px;
+    height: 90px;
+}
+
+.hotel-info__options {
+    display: flex;
+    justify-content: space-between;
+
+    width: 226px;
+    margin: 5px 0 0;
+
+    line-height: 21px;
+}
+
+.hotel-info__infrastructure, .hotel-info__price {
+    width: 110px;
+}
+
+.hotel-btn-wrapper {
+    display: flex;
+
+    margin-top: 10px;
+}
+
+.hotel-info__button {
+    padding: 3px 17px;
+}
+
+.hotel-btn-wrapper .button_brown {
+    margin-left: 6px;
+}
+
+.hotel-info__rating {
+    padding: 3px 16px;
+    margin-left: auto;
+
+    background-color: #f2f2f2;
+}
+
+.hotel-info__stars {
+    position: absolute;
+    top: 30px;
+    right: 70px;
+
+    width: 120px;
+    height: 20px;
+
+    background-image: url(../img/star.svg), url(../img/star.svg), url(../img/star.svg), url(../img/star.svg), url(../img/star.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 0 0, 24px 0, 48px 0, 72px 0, 96px 0;
+}
+
+.star-1 {
+    width: 18px;
+ }
+
+.stars-2 {
+    width: 42px;
+ }
+
+.stars-3 {
+    width: 66px;
+}
+
+.stars-4 {
+    width: 90px;
+}
+
+.stars-5 {
+    width: 114px;
+}
+
+.inner-page .main-footer {
+    background-image: none;
+}
